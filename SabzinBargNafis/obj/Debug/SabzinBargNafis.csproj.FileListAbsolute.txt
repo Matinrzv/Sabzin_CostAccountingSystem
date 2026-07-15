@@ -1,0 +1,12 @@
+E:\project C#\SabzinBargNafis\SabzinBargNafis\bin\Debug\SabzinBargNafis.exe.config
+E:\project C#\SabzinBargNafis\SabzinBargNafis\bin\Debug\SabzinBargNafis.exe
+E:\project C#\SabzinBargNafis\SabzinBargNafis\bin\Debug\SabzinBargNafis.pdb
+E:\project C#\SabzinBargNafis\SabzinBargNafis\obj\Debug\SabzinBargNafis.csproj.AssemblyReference.cache
+E:\project C#\SabzinBargNafis\SabzinBargNafis\obj\Debug\SabzinBargNafis.Properties.Resources.resources
+E:\project C#\SabzinBargNafis\SabzinBargNafis\obj\Debug\SabzinBargNafis.csproj.GenerateResource.cache
+E:\project C#\SabzinBargNafis\SabzinBargNafis\obj\Debug\SabzinBargNafis.csproj.CoreCompileInputs.cache
+E:\project C#\SabzinBargNafis\SabzinBargNafis\obj\Debug\SabzinBargNafis.exe
+E:\project C#\SabzinBargNafis\SabzinBargNafis\obj\Debug\SabzinBargNafis.pdb
+E:\project C#\SabzinBargNafis\SabzinBargNafis\obj\Debug\SabzinBargNafis.Form1.resources
+E:\project C#\SabzinBargNafis\SabzinBargNafis\obj\Debug\SabzinBargNafis.FormTarkib.resources
+E:\project C#\SabzinBargNafis\SabzinBargNafis\obj\Debug\SabzinBargNafis.FormBahaieTamamShode.resources
