@@ -112,6 +112,7 @@ namespace SabzinBargNafis
                 txtGhishnizSum.Text = TarkibFormula.Sum_Geshniz().ToString("N3");
                 txtNanaSum.Text = TarkibFormula.Sum_Nana().ToString("N3");
                 txtSaleSabziSum.Text = TarkibFormula.Sum_Sale_Sabzi().ToString("N3");
+                txtJafariSum.Text = "236.972";
             }
             catch 
             { 

@@ -593,6 +593,41 @@ namespace SabzinBargNafis
                 BahaieTamamShodeDataManager.GetValuesFromForm(this);
                 txtJNKHTDPN.Text = BahaieFormula.Jafari_KharidTeyDorePakNashode_Nerkh().ToString("N0");
 
+                txtJNKHTDPSH.Text = BahaieFormula.Jafari_KharidTeyDorePakshode_Nerkh().ToString("N0");
+
+                txtJMGHBTSHFSPSH.Text = BahaieFormula.Jafari_BahaieTamamShodeForoshSabziPakShode_Mablagh().ToString("N0");
+                txtJNBTSHFSPSH.Text = BahaieFormula.Jafari_BahaieTamamShodeForoshSabziPakShode_Nerkh().ToString("N0");
+
+                txtJMMJTMM.Text = BahaieFormula.Jafari_MandeJahatTolidMahsolMakhlot_Meghdar().ToString("N0");
+                txtJNMJTMM.Text = BahaieFormula.Jafari_MandeJahatTolidMahsolMakhlot_Nerkh().ToString("N0");
+                txtJMGHMJTMM.Text = BahaieFormula.Jafari_MandeJahatTolidMahsolMakhlot_Mablagh().ToString("N0");
+
+                txtJMMJTSM.Text = BahaieFormula.Jafari_MasrafSabzieTazeJahatTolidSabziMakhlot_Mablagh().ToString("N0");
+                txtJNMJTSM.Text = BahaieFormula.Jafari_MasrafSabzieTazeJahatTolidSabziMakhlot_Nerkh().ToString("N0");
+                txtJMGHMJTSM.Text = BahaieFormula.Jafari_MasrafSabzieTazeJahatTolidSabziMakhlot_Meghdar().ToString("N0");
+
+                txtJMMBATST.Text = BahaieFormula.Jafari_MandeBadAzTolidSabziTaze_Meghdar().ToString("N0");
+                txtJNMBATST.Text = BahaieFormula.Jafari_MandeBadAzTolidSabziTaze_Nerkh().ToString("N0");
+                txtJMGHMBATST.Text = BahaieFormula.Jafari_MandeBadAzTolidSabziTaze_Mablagh().ToString("N0");
+
+                txtJMZA.Text = BahaieFormula.Jafari_ZaieatAdi_Meghdar().ToString("N0");
+                txtJNZA.Text = BahaieFormula.Jafari_ZaieatAdi_Nerkh().ToString("N0");
+                txtJMGHZA.Text = BahaieFormula.Jafari_ZaieatAdi_Mablagh().ToString("N0");
+
+                txtJMMPD.Text = BahaieFormula.Jafari_MandePaianDore_Meghdar().ToString("N0");
+                txtJNMPD.Text = BahaieFormula.Jafari_MandePaianDore_Nerkh().ToString("N0");
+                txtJMGHMPD.Text = BahaieFormula.Jafari_MandePaianDore_Mablagh().ToString("N0");
+
+                txtJMZ.Text = BahaieFormula.Jafari_Zaieat_Meghdar().ToString("N0");
+
+                txtJMHDS.Text = BahaieFormula.Jafari_HoghoghVDastmozdVSarBar_Meghdar().ToString("N0");
+                txtJNHDS.Text = BahaieFormula.Jafari_HoghoghVDastmozdVSarBar_Nerkh().ToString("N0");
+                txtJMGHHDS.Text = BahaieFormula.Jafari_HoghoghVDastmozdVSarBar_Mablagh().ToString("N0");
+
+                txtJMSum.Text = BahaieFormula.Jafari_Sum_Meghdar().ToString("N0");
+                txtJNSum.Text = BahaieFormula.Jafari_Sum_Nerkh().ToString("N0");
+                txtJMGHSum.Text = BahaieFormula.Jafari_Sum_Mablagh().ToString("N0");
+
             }
             catch 
             {
