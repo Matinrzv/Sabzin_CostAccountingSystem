@@ -18,6 +18,7 @@ namespace SabzinBargNafis
         {
             InitializeComponent();
             AttachTextChangedEvents();
+            AttachNumericEvents(this);
         }
         private void AttachTextChangedEvents()
         {
@@ -602,9 +603,9 @@ namespace SabzinBargNafis
                 txtJNMJTMM.Text = BahaieFormula.Jafari_MandeJahatTolidMahsolMakhlot_Nerkh().ToString("N0");
                 txtJMGHMJTMM.Text = BahaieFormula.Jafari_MandeJahatTolidMahsolMakhlot_Mablagh().ToString("N0");
 
-                txtJMMJTSM.Text = BahaieFormula.Jafari_MasrafSabzieTazeJahatTolidSabziMakhlot_Mablagh().ToString("N0");
+                txtJMMJTSM.Text = BahaieFormula.Jafari_MasrafSabzieTazeJahatTolidSabziMakhlot_Meghdar().ToString("N0");
                 txtJNMJTSM.Text = BahaieFormula.Jafari_MasrafSabzieTazeJahatTolidSabziMakhlot_Nerkh().ToString("N0");
-                txtJMGHMJTSM.Text = BahaieFormula.Jafari_MasrafSabzieTazeJahatTolidSabziMakhlot_Meghdar().ToString("N0");
+                txtJMGHMJTSM.Text = BahaieFormula.Jafari_MasrafSabzieTazeJahatTolidSabziMakhlot_Mablagh().ToString("N0");
 
                 txtJMMBATST.Text = BahaieFormula.Jafari_MandeBadAzTolidSabziTaze_Meghdar().ToString("N0");
                 txtJNMBATST.Text = BahaieFormula.Jafari_MandeBadAzTolidSabziTaze_Nerkh().ToString("N0");

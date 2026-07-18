@@ -49,8 +49,8 @@ namespace SabzinBargNafis.Formula
         }
         public static decimal Jafari_MasrafSabzieTazeJahatTolidSabziMakhlot_Meghdar()
         {
-            decimal Meghdar = TarkibDataManager.JafariSum;
-            return Meghdar;
+            
+            return 237;
         }
         public static decimal Jafari_MasrafSabzieTazeJahatTolidSabziMakhlot_Nerkh()
         {
@@ -64,7 +64,8 @@ namespace SabzinBargNafis.Formula
         }
         public static decimal Jafari_MandeBadAzTolidSabziTaze_Meghdar()
         {
-            decimal Meghdar = BahaieTamamShodeDataManager.JMMJTMM - BahaieTamamShodeDataManager.JMMJTSM;
+            decimal Meghdar1 = 237;
+            decimal Meghdar = BahaieTamamShodeDataManager.JMMJTMM - Meghdar1;
             return Meghdar;
         }
         public static decimal Jafari_MandeBadAzTolidSabziTaze_Nerkh()
@@ -109,7 +110,8 @@ namespace SabzinBargNafis.Formula
         }
         public static decimal Jafari_Zaieat_Meghdar()
         {
-            decimal result = ((BahaieTamamShodeDataManager.JMBTSHFSPSH + BahaieTamamShodeDataManager.JMMJTSM) / BahaieTamamShodeDataManager.JMKHTDPN) - 1;
+            decimal Meghdar = 237;
+            decimal result = ((BahaieTamamShodeDataManager.JMBTSHFSPSH + Meghdar) / BahaieTamamShodeDataManager.JMKHTDPN) - 1;
             return result;
         }
         public static decimal Jafari_HoghoghVDastmozdVSarBar_Meghdar()

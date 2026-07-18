@@ -307,7 +307,7 @@ namespace SabzinBargNafis.Data
         public static decimal JMGHMJTMM { get; set; }
 
         // جعفری - مصرف جهت تولید سبزی مخلوط
-        public static decimal JMMJTSM { get; set; }
+        //public static decimal JMMJTSM { get; set; }
         public static decimal JNMJTSM { get; set; }
         public static decimal JMGHMJTSM { get; set; }
 
@@ -715,7 +715,7 @@ namespace SabzinBargNafis.Data
 
             JMGHMJTSM = ToDecimal(formBahaie.txtJMGHMJTSM.Text);
             JNMJTSM = ToDecimal(formBahaie.txtJNMJTSM.Text);
-            JMMJTSM = ToDecimal(formBahaie.txtJMMJTSM.Text);
+            //JMMJTSM = ToDecimal(formBahaie.txtJMMJTSM.Text);
 
             JMGHMBATST = ToDecimal(formBahaie.txtJMGHMBATST.Text);
             JNMBATST = ToDecimal(formBahaie.txtJNMBATST.Text);
