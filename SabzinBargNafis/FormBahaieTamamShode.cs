@@ -628,6 +628,43 @@ namespace SabzinBargNafis
                 txtJMSum.Text = BahaieFormula.Jafari_Sum_Meghdar().ToString("N0");
                 txtJNSum.Text = BahaieFormula.Jafari_Sum_Nerkh().ToString("N0");
                 txtJMGHSum.Text = BahaieFormula.Jafari_Sum_Mablagh().ToString("N0");
+                // تره
+                txtTNKHTDPN.Text = BahaieFormula.Tare_KharidTeyDorePakNashode_Nerkh().ToString("N0");
+
+                txtTNKHTDPSH.Text = BahaieFormula.Tare_KharidTeyDorePakshode_Nerkh().ToString("N0");
+
+                txtTMGHBTSHFSPSH.Text = BahaieFormula.Tare_BahaieTamamShodeForoshSabziPakShode_Mablagh().ToString("N0");
+                txtTNBTSHFSPSH.Text = BahaieFormula.Tare_BahaieTamamShodeForoshSabziPakShode_Nerkh().ToString("N0");
+
+                txtTMMJTMM.Text = BahaieFormula.Tare_MandeJahatTolidMahsolMakhlot_Meghdar().ToString("N0");
+                txtTNMJTMM.Text = BahaieFormula.Tare_MandeJahatTolidMahsolMakhlot_Nerkh().ToString("N0");
+                txtTMGHMJTMM.Text = BahaieFormula.Tare_MandeJahatTolidMahsolMakhlot_Mablagh().ToString("N0");
+
+                txtTMMJTSM.Text = BahaieFormula.Tare_MasrafSabzieTazeJahatTolidSabziMakhlot_Meghdar().ToString("N0");
+                txtTNMJTSM.Text = BahaieFormula.Tare_MasrafSabzieTazeJahatTolidSabziMakhlot_Nerkh().ToString("N0");
+                txtTMGHMJTSM.Text = BahaieFormula.Tare_MasrafSabzieTazeJahatTolidSabziMakhlot_Mablagh().ToString("N0");
+
+                txtTMMBATST.Text = BahaieFormula.Tare_MandeBadAzTolidSabziTaze_Meghdar().ToString("N0");
+                txtTNMBATST.Text = BahaieFormula.Tare_MandeBadAzTolidSabziTaze_Nerkh().ToString("N0");
+                txtTMGHMBATST.Text = BahaieFormula.Tare_MandeBadAzTolidSabziTaze_Mablagh().ToString("N0");
+
+                txtTMZA.Text = BahaieFormula.Tare_ZaieatAdi_Meghdar().ToString("N0");
+                txtTNZA.Text = BahaieFormula.Tare_ZaieatAdi_Nerkh().ToString("N0");
+                txtTMGHZA.Text = BahaieFormula.Tare_ZaieatAdi_Mablagh().ToString("N0");
+
+                txtTMMPD.Text = BahaieFormula.Tare_MandePaianDore_Meghdar().ToString("N0");
+                txtTNMPD.Text = BahaieFormula.Tare_MandePaianDore_Nerkh().ToString("N0");
+                txtTMGHMPD.Text = BahaieFormula.Tare_MandePaianDore_Mablagh().ToString("N0");
+
+                txtTMZ.Text = BahaieFormula.Tare_Zaieat_Meghdar().ToString("N0");
+
+                txtTMHDS.Text = BahaieFormula.Tare_HoghoghVDastmozdVSarBar_Meghdar().ToString("N0");
+                txtTNHDS.Text = BahaieFormula.Tare_HoghoghVDastmozdVSarBar_Nerkh().ToString("N0");
+                txtTMGHHDS.Text = BahaieFormula.Tare_HoghoghVDastmozdVSarBar_Mablagh().ToString("N0");
+
+                txtTMSum.Text = BahaieFormula.Tare_Sum_Meghdar().ToString("N0");
+                txtTNSum.Text = BahaieFormula.Tare_Sum_Nerkh().ToString("N0");
+                txtTMGHSum.Text = BahaieFormula.Tare_Sum_Mablagh().ToString("N0");
 
             }
             catch 

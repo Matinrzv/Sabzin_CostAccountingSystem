@@ -49,8 +49,8 @@ namespace SabzinBargNafis.Formula
         }
         public static decimal Jafari_MasrafSabzieTazeJahatTolidSabziMakhlot_Meghdar()
         {
-            
-            return 237;
+            decimal Meghdar = TarkibDataManager.JafariSum;
+            return Meghdar;
         }
         public static decimal Jafari_MasrafSabzieTazeJahatTolidSabziMakhlot_Nerkh()
         {
@@ -64,8 +64,7 @@ namespace SabzinBargNafis.Formula
         }
         public static decimal Jafari_MandeBadAzTolidSabziTaze_Meghdar()
         {
-            decimal Meghdar1 = 237;
-            decimal Meghdar = BahaieTamamShodeDataManager.JMMJTMM - Meghdar1;
+            decimal Meghdar = BahaieTamamShodeDataManager.JMMJTMM - BahaieTamamShodeDataManager.JMMJTSM;
             return Meghdar;
         }
         public static decimal Jafari_MandeBadAzTolidSabziTaze_Nerkh()
@@ -110,8 +109,7 @@ namespace SabzinBargNafis.Formula
         }
         public static decimal Jafari_Zaieat_Meghdar()
         {
-            decimal Meghdar = 237;
-            decimal result = ((BahaieTamamShodeDataManager.JMBTSHFSPSH + Meghdar) / BahaieTamamShodeDataManager.JMKHTDPN) - 1;
+            decimal result = ((BahaieTamamShodeDataManager.JMBTSHFSPSH + BahaieTamamShodeDataManager.JMMJTSM) / BahaieTamamShodeDataManager.JMKHTDPN) - 1;
             return result;
         }
         public static decimal Jafari_HoghoghVDastmozdVSarBar_Meghdar()
@@ -151,5 +149,146 @@ namespace SabzinBargNafis.Formula
             decimal Nerkh = BahaieTamamShodeDataManager.JMGHSum / BahaieTamamShodeDataManager.JMSum;
             return Nerkh;
         }
+        // فرمول های تره
+        public static decimal Tare_KharidTeyDorePakNashode_Nerkh()
+        {
+            decimal result = BahaieTamamShodeDataManager.TMGHKHTDPN / BahaieTamamShodeDataManager.TMKHTDPN;
+            return result;
+        }
+        public static decimal Tare_KharidTeyDorePakshode_Nerkh()
+        {
+            decimal result = BahaieTamamShodeDataManager.TMGHKHTDPSH / BahaieTamamShodeDataManager.TMKHTDPSH;
+            return result;
+        }
+        public static decimal Tare_BahaieTamamShodeForoshSabziPakShode_Mablagh()
+        {
+            decimal Number = -1;
+            decimal result = (BahaieTamamShodeDataManager.TMBTSHFSPSH * BahaieTamamShodeDataManager.TMKHTDPN) * (Number * (Number + BahaieTamamShodeDataManager.TMZ));
+            return result;
+        }
+        public static decimal Tare_BahaieTamamShodeForoshSabziPakShode_Nerkh()
+        {
+            decimal result = BahaieTamamShodeDataManager.TMGHBTSHFSPSH / BahaieTamamShodeDataManager.TMBTSHFSPSH;
+            return result;
+        }
+        public static decimal Tare_MandeJahatTolidMahsolMakhlot_Meghdar()
+        {
+            decimal result = BahaieTamamShodeDataManager.TMKHTDPN - (BahaieTamamShodeDataManager.TMMJTMM * (1 - BahaieTamamShodeDataManager.TMZ));
+            return result;
+        }
+        public static decimal Tare_MandeJahatTolidMahsolMakhlot_Mablagh()
+        {
+            decimal result = BahaieTamamShodeDataManager.TMMAD + BahaieTamamShodeDataManager.TMKHTDPN
+                + BahaieTamamShodeDataManager.TMKHTDPSH + BahaieTamamShodeDataManager.TMBTSHFSPSH;
+            return result;
+        }
+        public static decimal Tare_MandeJahatTolidMahsolMakhlot_Nerkh()
+        {
+            decimal result = BahaieTamamShodeDataManager.TMGHMJTMM / BahaieTamamShodeDataManager.TMMJTMM;
+            return result;
+        }
+        public static decimal Tare_MasrafSabzieTazeJahatTolidSabziMakhlot_Meghdar()
+        {
+            decimal Meghdar = TarkibDataManager.TareSum;
+            return Meghdar;
+        }
+        public static decimal Tare_MasrafSabzieTazeJahatTolidSabziMakhlot_Nerkh()
+        {
+            decimal Nerkh = BahaieTamamShodeDataManager.TNMJTMM;
+            return Nerkh;
+        }
+        public static decimal Tare_MasrafSabzieTazeJahatTolidSabziMakhlot_Mablagh()
+        {
+            decimal result = Tare_MasrafSabzieTazeJahatTolidSabziMakhlot_Nerkh() * Tare_MasrafSabzieTazeJahatTolidSabziMakhlot_Meghdar();
+            return result;
+        }
+        public static decimal Tare_MandeBadAzTolidSabziTaze_Meghdar()
+        {
+            decimal Meghdar = BahaieTamamShodeDataManager.TMMJTMM - BahaieTamamShodeDataManager.TMMJTSM;
+            return Meghdar;
+        }
+        public static decimal Tare_MandeBadAzTolidSabziTaze_Nerkh()
+        {
+            decimal Nerkh = TarkibDataManager.TareSum;
+            return Nerkh;
+        }
+        public static decimal Tare_MandeBadAzTolidSabziTaze_Mablagh()
+        {
+            decimal result = Tare_MandeBadAzTolidSabziTaze_Nerkh() * Tare_MandeBadAzTolidSabziTaze_Meghdar();
+            return result;
+        }
+        public static decimal Tare_ZaieatAdi_Meghdar()
+        {
+            decimal Meghdar = BahaieTamamShodeDataManager.TMMBATST - BahaieTamamShodeDataManager.TMMJTSKH;
+            return Meghdar;
+        }
+        public static decimal Tare_ZaieatAdi_Nerkh()
+        {
+            decimal Nerkh = BahaieTamamShodeDataManager.TNMBATST - BahaieTamamShodeDataManager.TNMJTSKH;
+            return Nerkh;
+        }
+        public static decimal Tare_ZaieatAdi_Mablagh()
+        {
+            decimal Mablagh = BahaieTamamShodeDataManager.TMGHMBATST - BahaieTamamShodeDataManager.TMGHMJTSKH;
+            return Mablagh;
+        }
+        public static decimal Tare_MandePaianDore_Meghdar()
+        {
+            decimal Meghdar = BahaieTamamShodeDataManager.TMMBATST - BahaieTamamShodeDataManager.TMMJTSKH - BahaieTamamShodeDataManager.TMZA;
+            return Meghdar;
+        }
+        public static decimal Tare_MandePaianDore_Nerkh()
+        {
+            decimal Nerkh = BahaieTamamShodeDataManager.TNMBATST - BahaieTamamShodeDataManager.TNMJTSKH - BahaieTamamShodeDataManager.TNZA;
+            return Nerkh;
+        }
+        public static decimal Tare_MandePaianDore_Mablagh()
+        {
+            decimal Mablagh = BahaieTamamShodeDataManager.TMGHMBATST - BahaieTamamShodeDataManager.TMGHMJTSKH - BahaieTamamShodeDataManager.TMGHZA;
+            return Mablagh;
+        }
+        public static decimal Tare_Zaieat_Meghdar()
+        {
+            decimal result = ((BahaieTamamShodeDataManager.TMBTSHFSPSH + BahaieTamamShodeDataManager.TMMJTSM) / BahaieTamamShodeDataManager.TMKHTDPN) - 1;
+            return result;
+        }
+        public static decimal Tare_HoghoghVDastmozdVSarBar_Meghdar()
+        {
+            decimal Meghdar = BahaieTamamShodeDataManager.TMBTSHFSPSH;
+            return Meghdar;
+        }
+        public static decimal Tare_HoghoghVDastmozdVSarBar_Mablagh()
+        {
+            decimal SumBahaieTamamShodeSabziPakShode = BahaieTamamShodeDataManager.JMBTSHFSPSH +
+            BahaieTamamShodeDataManager.SHVMBTSHFSPSH + BahaieTamamShodeDataManager.EMGHBTSHFSPSH +
+            BahaieTamamShodeDataManager.TMBTSHFSPSH + BahaieTamamShodeDataManager.SHNMBTSHFSPSH +
+            BahaieTamamShodeDataManager.GHMBTSHFSPSH + BahaieTamamShodeDataManager.HPMBTSHFSPSH +
+            BahaieTamamShodeDataManager.LMBTSHFSPSH + BahaieTamamShodeDataManager.KMBTSHFSPSH +
+            BahaieTamamShodeDataManager.GMBTSHFSPSH;
+            decimal Mablagh = (BahaieTamamShodeDataManager.JMZA / SumBahaieTamamShodeSabziPakShode) * BahaieTamamShodeDataManager.SumHazineHS;
+            return Mablagh;
+        }
+        public static decimal Tare_HoghoghVDastmozdVSarBar_Nerkh()
+        {
+            decimal Nerkh = BahaieTamamShodeDataManager.TMGHHDS / BahaieTamamShodeDataManager.TMHDS;
+            return Nerkh;
+        }
+        public static decimal Tare_Sum_Meghdar()
+        {
+            decimal Meghdar = BahaieTamamShodeDataManager.TMBTSHFSPSH;
+            return Meghdar;
+        }
+        public static decimal Tare_Sum_Mablagh()
+        {
+            decimal Mablagh = BahaieTamamShodeDataManager.TMGHMAD + BahaieTamamShodeDataManager.TMGHKHTDPN
+                + BahaieTamamShodeDataManager.TMGHKHTDPSH + BahaieTamamShodeDataManager.TMGHHDS;
+            return Mablagh;
+        }
+        public static decimal Tare_Sum_Nerkh()
+        {
+            decimal Nerkh = BahaieTamamShodeDataManager.TMGHSum / BahaieTamamShodeDataManager.TMSum;
+            return Nerkh;
+        }
+
     }
 }
